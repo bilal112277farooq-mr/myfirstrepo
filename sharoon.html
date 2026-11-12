@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let number = 10;
+
+if (number > 0) {
+    document.write("Positive");
+} else if (number < 0) {
+    document.write("Negative");
+} else {
+    document.write("Zero");
+}
+</script>
+
+
+
+
+<script>
+let marks = 75;
+
+if (marks >= 80) {
+    document.write("A");
+} else if (marks >= 70) {
+    document.write("B");
+} else if (marks >= 60) {
+    document.write("C");
+} else {
+    document.write("Fail");
+}
+</script>
+
+
+
+
+
+
+
+<script>
+let age = 20;
+let validID = true;
+
+if (age >= 18 && validID === true) {
+    document.write("Entry Allowed");
+} else {
+    document.write("Entry Not Allowed");
+}
+</script>
+
+
+
+
+
+
+
+<script>
+function calculateSum(num1, num2) {
+    return num1 + num2;
+}
+
+let result = calculateSum(25, 35);
+
+document.write(result);
+</script>
+
+
+
+
+
+
+<script>
+let text = "JavaScript Developer";
+
+document.write("Uppercase: " + text.toUpperCase() + "<br>");
+document.write("Lowercase: " + text.toLowerCase() + "<br>");
+document.write("Length: " + text.length + "<br>");
+document.write("Developer exists: " + text.includes("Developer"));
+</script>
+
+
+
+
+
+
+
+
+<script>
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.push("Orange");
+document.write(fruits + "<br>");
+
+fruits.pop();
+document.write(fruits + "<br>");
+
+fruits.unshift("Grapes");
+document.write(fruits + "<br>");
+
+fruits.shift();
+document.write(fruits);
+</script>
+
+
+
+
+
+
+<script>
+let numbers = [2, 4, 6, 8, 10];
+
+let newNumbers = numbers.map(function(number) {
+    return number * 3;
+});
+
+document.write(newNumbers);
+</script>
+
+
+
+
+
+<script>
+let day = 5;
+
+switch (day) {
+    case 1:
+        document.write("Monday");
+        break;
+
+    case 2:
+        document.write("Tuesday");
+        break;
+
+    case 3:
+        document.write("Wednesday");
+        break;
+
+    case 4:
+        document.write("Thursday");
+        break;
+
+    case 5:
+        document.write("Friday");
+        break;
+
+    case 6:
+        document.write("Saturday");
+        break;
+
+    case 7:
+        document.write("Sunday");
+        break;
+
+    default:
+        document.write("Invalid Day");
+}
+</script>
+
+
+
+
+</body>
+</html>

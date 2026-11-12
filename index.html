@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConference 2026 - Register</title>
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
+        header { background: #1e293b; color: #fff; padding: 1.5rem 2rem; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1.5rem; margin: 1rem 0 0 0; }
+        nav a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+        main { max-width: 600px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        
+        form { display: flex; flex-direction: column; gap: 1.25rem; }
+        fieldset { border: 1px solid #cbd5e1; border-radius: 6px; padding: 1rem; margin: 0; }
+        legend { font-weight: bold; padding: 0 0.5rem; }
+        
+        label { display: block; font-weight: 500; margin-bottom: 0.3rem; }
+        input[type="text"], input[type="email"], select {
+            width: 100%; padding: 0.75rem; border: 1px solid #94a3b8; border-radius: 4px; font-size: 1rem; box-sizing: border-box;
+        }
+        /* Clear focus affordances for accessibility */
+        input:focus, select:focus, button:focus {
+            outline: 3px solid #0284c7;
+            outline-offset: 2px;
+        }
+        .checkbox-group { display: flex; align-items: center; gap: 0.5rem; }
+        .checkbox-group label { margin-bottom: 0; font-weight: normal; }
+        .checkbox-group input { width: auto; }
+
+        button[type="submit"] {
+            background: #0284c7; color: #fff; border: none; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: bold; border-radius: 4px; cursor: pointer;
+        }
+        button[type="submit"]:hover { background: #0369a1; }
+
+        footer { text-align: center; padding: 1.5rem; background: #e2e8f0; margin-top: 2rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TechConference 2026</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html" aria-current="page">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Attendee Registration Form</h2>
+            <p>Please fill out the form below to reserve your ticket.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required autocomplete="name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event Preferences</legend>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="ticket-type">Ticket Type <span aria-hidden="true">*</span></label>
+                        <select id="ticket-type" name="ticket_type" required>
+                            <option value="" disabled selected>-- Select a Ticket --</option>
+                            <option value="standard">Standard Pass ($199)</option>
+                            <option value="vip">VIP Pass ($399)</option>
+                            <option value="student">Student Pass ($99)</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to conference updates and announcements</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Complete Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechConference. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConference 2026 - Schedule</title>
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
+        header { background: #1e293b; color: #fff; padding: 1.5rem 2rem; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1.5rem; margin: 1rem 0 0 0; }
+        nav a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+        main { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { border: 1px solid #cbd5e1; padding: 0.75rem; text-align: left; }
+        th { background: #f1f5f9; }
+        caption { font-weight: bold; margin-bottom: 0.75rem; text-align: left; font-size: 1.1rem; }
+        footer { text-align: center; padding: 1.5rem; background: #e2e8f0; margin-top: 2rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TechConference 2026</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Event Schedule</h2>
+            <p>Review the breakdown of our keynote sessions and workshops below.</p>
+            
+            <table>
+                <caption>Conference Itinerary - Day 1</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Session Title</th>
+                        <th scope="col">Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">09:00 AM</th>
+                        <td>Opening Keynote: The Future of Web Standards</td>
+                        <td>Jane Doe</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:30 AM</th>
+                        <td>Building Accessible Web Applications</td>
+                        <td>John Smith</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">01:00 PM</th>
+                        <td>Hands-on CSS Grid & Subgrid Workshop</td>
+                        <td>Alex Johnson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechConference. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConference 2026 - Home</title>
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
+        header { background: #1e293b; color: #fff; padding: 1.5rem 2rem; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 1.5rem; margin: 1rem 0 0 0; }
+        nav a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+        main { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        footer { text-align: center; padding: 1.5rem; background: #e2e8f0; margin-top: 2rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TechConference 2026</h1>
+        <p>Welcome to the premier annual developer conference.</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About the Event</h2>
+            <p>Join industry experts, designers, and developers for three days of inspiring talks, hands-on workshops, and networking opportunities.</p>
+            <p>Use the navigation above to explore our event schedule or secure your spot by filling out the registration form.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechConference. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
